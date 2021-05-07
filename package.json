@@ -1,0 +1,19 @@
+{
+  "name": "mana",
+  "version": "1.0.0",
+  "description": "alteracoes na barra de mana",
+  "main": "manaB.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorGSoares/TDDmana.git"
+  },
+  "author": "IgorGSoares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgorGSoares/TDDmana/issues"
+  },
+  "homepage": "https://github.com/IgorGSoares/TDDmana#readme"
+}
