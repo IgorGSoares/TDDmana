@@ -37,7 +37,7 @@ test ("subir de nível/respawn", () =>{
 test ("upar mana", () =>{
     mana.setValue(15);
     mana.upgrade();
-    mana.reset();
+    //mana.reset();
     expect(mana.getValue()).toBe(40);
 })
 
@@ -77,7 +77,6 @@ test("usar magia fraca", () => {
 
 test("usar magia sem mana", () =>{
     mana.setValue(0);
-    let valorInicial = mana.getValue();
     expect(mana.usarMagia("forte")).toBe(0);
   });
 
@@ -89,19 +88,16 @@ test("usar magia sem mana", () =>{
 
 test("mana insuficiente para magia fraca", () =>{
     mana.setValue(3);
-    let valorInicial = mana.getValue();
     expect(mana.usarMagia("fraca")).toBe(mana.getValue());
   });
 
   test("mana insuficiente para magia media", () =>{
     mana.setValue(9);
-    let valorInicial = mana.getValue();
     expect(mana.usarMagia("media")).toBe(mana.getValue());
   });
 
   test("mana insuficiente para magia forte", () =>{
     mana.setValue(13);
-    let valorInicial = mana.getValue();
     expect(mana.usarMagia("forte")).toBe(mana.getValue());
   });
 
